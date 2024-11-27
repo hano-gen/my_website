@@ -1,0 +1,114 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>bousai</title>
+  <link rel="stylesheet" href="preparedness.css">
+  <script type="text/javascript" src="preparedness.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Stoke&family=Yellowtail&family=Geo&family=Oswald&family=Lobster&family=Cookie&family=Chewy&family=Limelight&family=Sacramento&family=Plaster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- ヘッダー -->
+<header>
+  <h1>防災</h1>
+  <nav>
+    <ul class="header-ul">
+      <li class="header-li"><a class="link" href="disasters.html">豊岡で起こった災害</a></li>
+      <li class="header-ll"><a class="link" href="preparedness.html">備えのチェックリスト</a></li>
+      <li class="header-li"><a class="link" href="emergency.html">災害時の行動指針</a></li>
+      <li class="header-li"><a class="link" href="contacts.html">連絡先・避難所情報</a></li>
+    </ul>
+</nav>
+</header>
+
+
+ <!-- 携帯用 -->
+ <section>
+  <details>
+  <summary>携帯用</summary>
+  <ul>
+      <li><input type="checkbox" id="water-carried"> <label for="water-carried">飲料水 (500ml)</label></li>
+      <li><input type="checkbox" id="food-carried"> <label for="food-carried">携帯食 </label></li>
+      <p>チョコレート、キャンディー、栄養補給・調整食品など</p>
+      <li><input type="checkbox" id="id-carried"> <label for="id-carried">身分証明書 (健康保険証、運転免許証、パスポートなど)</label></li>
+      <li><input type="checkbox" id="cash-carried"> <label for="cash-carried">現金 (10円硬貨含む)</label></li>
+      <p>公衆電話用に10円、100円玉が必要<br>携帯・自宅電話がつながらない時</p>
+      <li><input type="checkbox" id="light-carried"> <label for="light-carried">懐中電灯 (小型ライト)</label></li>
+      <li><input type="checkbox" id="memo-carried"> <label for="memo-carried">連絡メモ・備えリスト</label></li>
+      <li><input type="checkbox" id="pen-carried"> <label for="pen-carried">筆記用具 (メモ帳とペン)</label></li>
+      <li><input type="checkbox" id="battery-carried"> <label for="battery-carried">予備電池</label></li>
+  </ul>
+  </details>
+</section>
+<!-- 非常持出し用 -->
+<section>
+  <details>
+  <summary>非常持出し用</summary>
+  <ul>
+      <li><input type="checkbox" id="water-kit"> <label for="water-kit">飲料水 (1.5L/人×3日分)</label></li>
+      <li><input type="checkbox" id="food-kit"> <label for="food-kit">非常食 (缶詰、アルファ化米、インスタント食品など)</label></li>
+      <li><input type="checkbox" id="helmet-kit"> <label for="helmet-kit">ヘルメット・防災ずきん・帽子など</label></li>
+      <p>頭を保護して逃げるもの</p>
+      <li><input type="checkbox" id="flashlight-kit"> <label for="flashlight-kit">懐中電灯 (予備電池付き)</label></li>
+      <li><input type="checkbox" id="medicine-kit"> <label for="medicine-kit">救急用品セット (消毒薬、脱脂綿、包帯など)</label></li>
+      <li><input type="checkbox" id="toilet-kit"> <label for="toilet-kit">簡易トイレ</label></li>
+      <li><input type="checkbox" id="mask-kit"> <label for="mask-kit">マスク</label></li>
+      <li><input type="checkbox" id="gloves-kit"> <label for="gloves-kit">手袋 (作業用)</label></li>
+      <li><input type="checkbox" id="blanket-kit"> <label for="blanket-kit">サバイバルブランケット</label></li>
+      <li><input type="checkbox" id="money-kit"> <label for="money-kit">現金 (10円硬貨含む)</label></li>
+      <li><input type="checkbox" id="pen-kit"> <label for="pen-kit">筆記用具 (油性マジックも)</label></li>
+      <li><input type="checkbox" id="id-copy-kit"> <label for="id-copy-kit">身分証明書のコピー</label></li>
+      <li><input type="checkbox" id="radio-kit"> <label for="radio-kit">携帯ラジオ (予備電池付き)</label></li>
+  </ul>
+  </details>
+</section>
+<!-- 備蓄用 -->
+<section>
+  <details>
+  <summary>備蓄用</summary>
+  <ul>
+      <li><input type="checkbox" id="stored-water"> <label for="stored-water">飲料水 (3日〜1週間分)</label></li>
+      <li><input type="checkbox" id="stored-food"> <label for="stored-food">保存食 (乾パン、アルファ化米、缶詰類など)</label></li>
+      <li><input type="checkbox" id="toilet-stored"> <label for="toilet-stored">簡易トイレ</label></li>
+      <li><input type="checkbox" id="tools-stored"> <label for="tools-stored">工具類 (缶切り、ロープなど)</label></li>
+      <li><input type="checkbox" id="blanket-stored"> <label for="blanket-stored">毛布・防寒具</label></li>
+      <li><input type="checkbox" id="soap-stored"> <label for="soap-stored">石けん・ドライシャンプー</label></li>
+      <li><input type="checkbox" id="battery-stored"> <label for="battery-stored">予備電池</label></li>
+      <li><input type="checkbox" id="slippers-stored"> <label for="slippers-stored">スリッパ</label></li>
+      <li><input type="checkbox" id="newspaper-stored"> <label for="newspaper-stored">新聞紙・ダンボール</label></li>
+      <li><input type="checkbox" id="bonbe-stored"> <label for="bonbe-stored">カセットコンロ・ボンベ</label></li>
+      <li><input type="checkbox" id="furoshiki-stored"> <label for="furoshiki-stored">風呂敷 (多用途)</label></li>
+      <li><input type="checkbox" id="towel-stored"> <label for="towel-stored">タオル・キッチンペーパー</label></li>
+      <li><input type="checkbox" id="candle-stored"> <label for="candle-stored">ローソク</label></li>
+  </ul>
+  </details>
+</section>
+
+<p>【このチェックリストは、阪神・淡路大震災記念人と防災未来センター(<a href="https://www.dri.ne.jp/">https://www.dri.ne.jp/</a>）の「減災チェックリスト」を元に作成しました】</p>
+
+
+  <!-- リンク -->
+  <a class="link" href="index.html">TOPページに戻る</a>
+
+</section>
+
+
+<!-- フッタ ー-->
+<!-- フッタ ー-->
+<footer class="footer-001">  
+  <nav>
+      <ul class="footer-001__list">
+        <li><a href="disasters.html">豊岡で起こった災害</a></li>
+        <li><a href="preparedness.html">備えのチェックリスト</a></li>
+        <li><a href="emergency.html">災害時の行動指針</a></li>
+        <li><a href="contacts.html">連絡先・避難所情報</a></li>
+      </ul>
+  </nav>
+  <p class="footer-001__copyright">@ .</p>
+</footer>
+
+</body>
+
+</html>

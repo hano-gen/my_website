@@ -1,0 +1,174 @@
+/* ===== 全体のスタイル ===== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ===== ヘッダーのスタイル ===== */
+/* ヘッダー */
+header {
+  background-color: orange;
+  background-size: cover;
+  padding: 50px;
+  text-align: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  padding: .9em 2em;
+  border: none;
+  border-bottom: 2px solid #e6edf3;
+  background-color: transparent;
+  color: #333;
+  font-weight: 600;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.link::after {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center left;
+  width: 100%;
+  height: 2px;
+  background-color: #2589d0;
+  content: '';
+  transition: transform .3s ease;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+}
+
+h1 {
+  font-size: 70px;
+  font-family: lobster;
+  color: ivory;
+  text-align: center;
+}
+
+section {
+  background-color: ivory;
+  padding: 30px;
+  margin-left: 30px;
+  text-align: left;
+}
+
+h2 {
+  color: brown;
+  font-size: 40px;
+}
+
+div {
+  display: flex;
+}
+
+img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+p {
+  line-height: 180%;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+
+summary {
+  color: brown;
+  font-size: 40px; 
+}
+
+details[open] summary {
+  margin-bottom: 15px; /* 開いた状態での見出しとリスト間の余白 */
+}
+
+section {
+  background-color: ivory;
+  padding: 20px;
+  margin: 20px 0; /* 上下のみ余白 */
+  border-radius: 8px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+ul li input[type="checkbox"] {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  accent-color: #007bff;
+}
+
+ul li label {
+font-size: 1em;
+color: #333;
+}
+
+
+summary {
+  font-size: 20px;
+}
+
+input[type="checkbox"] {
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  vertical-align: -5px;
+}
+
+input[type="checkbox"]:checked:before {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  transform: rotate(50deg);
+  width: 4px;
+  height: 8px;
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  content: '';
+}
+
+.header-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.header-li {
+  float: left;
+}
+
+
+
+footer {
+  color: white;
+  background-color: brown;
+  text-align: center;
+  padding: 10px;
+}
