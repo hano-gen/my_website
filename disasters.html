@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>bousai</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="disasters.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Stoke&family=Yellowtail&family=Geo&family=Oswald&family=Lobster&family=Cookie&family=Chewy&family=Limelight&family=Sacramento&family=Plaster&display=swap" rel="stylesheet">
 </head>
@@ -13,12 +13,17 @@
 <!-- ヘッダー -->
 <header>
   <h1>防災</h1>
-  <nav>
-    <ul>
-        <li><a href="disasters.html">豊岡で起こった災害</a></li>
-        <li><a href="preparedness.html">備えのチェックリスト</a></li>
-        <li><a href="emergency.html">災害時の行動指針</a></li>
-        <li><a href="contacts.html">連絡先・避難所情報</a></li>
+  <button class="hamburger" aria-label="メニューを開閉">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="nav-menu">
+    <ul class="header-ul">
+      <li class="header-li"><a class="link" href="disasters.html">豊岡で起こった災害</a></li>
+      <li class="header-ll"><a class="link" href="preparedness.html">備えのチェックリスト</a></li>
+      <li class="header-li"><a class="link" href="emergency.html">災害時の行動指針</a></li>
+      <li class="header-li"><a class="link" href="contacts.html">連絡先・避難所情報</a></li>
     </ul>
 </nav>
 </header>
@@ -34,6 +39,10 @@
     <!-- １つ目の箱   -->
     <div>
       <img src="cro.jpg" alt="クロワッサン">
+    </div>
+
+    <div>
+      <h2>過去の災害</h2>
     </div>
 
   </div>

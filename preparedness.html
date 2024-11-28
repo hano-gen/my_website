@@ -13,7 +13,12 @@
 <!-- ヘッダー -->
 <header>
   <h1>防災</h1>
-  <nav>
+  <button class="hamburger" aria-label="メニューを開閉">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="nav-menu">
     <ul class="header-ul">
       <li class="header-li"><a class="link" href="disasters.html">豊岡で起こった災害</a></li>
       <li class="header-ll"><a class="link" href="preparedness.html">備えのチェックリスト</a></li>
@@ -32,13 +37,27 @@
       <li><input type="checkbox" id="water-carried"> <label for="water-carried">飲料水 (500ml)</label></li>
       <li><input type="checkbox" id="food-carried"> <label for="food-carried">携帯食 </label></li>
       <p>チョコレート、キャンディー、栄養補給・調整食品など</p>
+      <li><input type="checkbox" id="medical kit-carried"> <label for="medical kit-carried">医療キット (消毒薬、脱脂綿、包帯など)</label></li>
+      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">常備薬、持病薬 </label></li>
+      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">マスク </label></li>
+      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">簡易トイレ </label></li>
+      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">ティッシュペーパー、トイレットペーパー </label></li>
+      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">ハンカチ </label></li>
+      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">安全ピン </label></li>
+      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">ポリ袋 </label></li>
+      <li><input type="checkbox" id="whistle-carried"> <label for="whistle-carried">ホイッスル </label></li>
+      <li><input type="checkbox" id="radio-carried"> <label for="radio-carried">ラジオ </label></li>
+      <li><input type="checkbox" id="mobile phone-carried"> <label for="mobile phone-carried">携帯電話 </label></li>
+      <li><input type="checkbox" id="contact memo-carried"> <label for="contact memo-carried">連絡メモ </label></li>
+      <li><input type="checkbox" id="preparedness list-carried"> <label for="preparedness list-carried">備えリスト </label></li>
       <li><input type="checkbox" id="id-carried"> <label for="id-carried">身分証明書 (健康保険証、運転免許証、パスポートなど)</label></li>
       <li><input type="checkbox" id="cash-carried"> <label for="cash-carried">現金 (10円硬貨含む)</label></li>
       <p>公衆電話用に10円、100円玉が必要<br>携帯・自宅電話がつながらない時</p>
       <li><input type="checkbox" id="light-carried"> <label for="light-carried">懐中電灯 (小型ライト)</label></li>
       <li><input type="checkbox" id="memo-carried"> <label for="memo-carried">連絡メモ・備えリスト</label></li>
-      <li><input type="checkbox" id="pen-carried"> <label for="pen-carried">筆記用具 (メモ帳とペン)</label></li>
-      <li><input type="checkbox" id="battery-carried"> <label for="battery-carried">予備電池</label></li>
+      <li><input type="checkbox" id="pen-carried"> <label for="pen-carried">筆記用具 (メモ帳、ペン)</label></li>
+      <li><input type="checkbox" id="battery-carried"> <label for="battery-carried">予備電池、バッテリー</label></li>
+      <li><input type="checkbox" id="disposable body warmer-carried"> <label for="disposable body warmer-carried">使い捨てカイロ</label></li>
   </ul>
   </details>
 </section>
@@ -52,7 +71,7 @@
       <li><input type="checkbox" id="helmet-kit"> <label for="helmet-kit">ヘルメット・防災ずきん・帽子など</label></li>
       <p>頭を保護して逃げるもの</p>
       <li><input type="checkbox" id="flashlight-kit"> <label for="flashlight-kit">懐中電灯 (予備電池付き)</label></li>
-      <li><input type="checkbox" id="medicine-kit"> <label for="medicine-kit">救急用品セット (消毒薬、脱脂綿、包帯など)</label></li>
+      <li><input type="checkbox" id="medical-kit"> <label for="medical-kit">医療キット (消毒薬、脱脂綿、包帯など)</label></li>
       <li><input type="checkbox" id="toilet-kit"> <label for="toilet-kit">簡易トイレ</label></li>
       <li><input type="checkbox" id="mask-kit"> <label for="mask-kit">マスク</label></li>
       <li><input type="checkbox" id="gloves-kit"> <label for="gloves-kit">手袋 (作業用)</label></li>
@@ -97,16 +116,16 @@
 
 <!-- フッタ ー-->
 <!-- フッタ ー-->
-<footer class="footer-001">  
+<footer>  
   <nav>
-      <ul class="footer-001__list">
-        <li><a href="disasters.html">豊岡で起こった災害</a></li>
-        <li><a href="preparedness.html">備えのチェックリスト</a></li>
-        <li><a href="emergency.html">災害時の行動指針</a></li>
-        <li><a href="contacts.html">連絡先・避難所情報</a></li>
+      <ul class="footer-ul">
+        <li><a class="footer-link" href="disasters.html">豊岡で起こった災害</a></li>
+        <li><a class="footer-link" href="preparedness.html">備えのチェックリスト</a></li>
+        <li><a class="footer-link" href="emergency.html">災害時の行動指針</a></li>
+        <li><a class="footer-link" href="contacts.html">連絡先・避難所情報</a></li>
       </ul>
   </nav>
-  <p class="footer-001__copyright">@ .</p>
+  <p class="footer-copyright">@ .</p>
 </footer>
 
 </body>
