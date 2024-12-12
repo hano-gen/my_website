@@ -251,8 +251,33 @@ h2.menu-title {
 }
 
 footer {
-  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 10px 10px;
   background-color: brown;
-  text-align: center;
-  padding: 10px;
+}
+
+.footer-ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 1.5em;
+  list-style-type: none;
+  margin: 0 0 .5em;
+  padding: .5em;
+}
+
+.footer-link {
+  color: #fff;
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.footer-copyright {
+  margin: 0;
+  color: #ffffffb3;
+  font-weight: 200;
+  font-size: .8em;
 }

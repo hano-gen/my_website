@@ -254,13 +254,6 @@ table th {
   font-weight: bold;
 }
 
-
-
-@media (max-width: 768px) {
-    body {
-        padding: 10px;
-    }
-  }
   .header-ul {
     display: flex;
     justify-content: center;
