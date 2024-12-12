@@ -1,0 +1,94 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>bousai</title>
+  <link rel="stylesheet" href="emergency.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Stoke&family=Yellowtail&family=Geo&family=Oswald&family=Lobster&family=Cookie&family=Chewy&family=Limelight&family=Sacramento&family=Plaster&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width" />
+</head>
+
+<body>
+
+<!-- ヘッダー -->
+<header>
+  <h1>防災</h1>
+  <button class="hamburger" aria-label="メニューを開閉">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="nav-menu">
+    <ul class="header-ul">
+      <li class="header-li"><a class="link" href="disasters.html">豊岡で起こった災害</a></li>
+      <li class="header-ll"><a class="link" href="preparedness.html">備えのチェックリスト</a></li>
+      <li class="header-li"><a class="link" href="emergency.html">災害時の行動指針</a></li>
+      <li class="header-li"><a class="link" href="contacts.html">連絡先・避難所情報</a></li>
+    </ul>
+</nav>
+</header>
+<main>
+    <section id="decision-tree">
+        <h2>避難行動の判断</h2>
+        <p id="question">防災マップで自宅周辺に色がついていますか？</p>
+        <div id="buttons">
+            <button onclick="handleAnswer('yes')">はい</button>
+            <button onclick="handleAnswer('no')">いいえ</button>
+            <button onclick="goBack()">戻る</button>
+        </div>
+        <div id="decision-result"></div>
+        <p>【参考】(<a href="https://www.city.toyooka.lg.jp/_res/projects/default_project/_page_/001/023/184/2022kouhou07/kouhoutoyooka07_0405.pdf">豊岡市公式ホームページ</a>)</p>    
+    </section>
+</main>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>警戒レベル</th>
+                <th>行動を促す情報</th>
+                <th>状況</th>
+                <th>住民がとるべき行動</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="level-5">
+                <td>5</td>
+                <td>緊急安全確保</td>
+                <td>災害発生または切迫、命の危険</td>
+                <td>すぐに安全な避難ができず、命が危険な状況。建物の2階以上の高い所で山側から遠い部屋などに直ちに安全を確保</td>
+            </tr>
+            <tr class="level-4">
+                <td>4</td>
+                <td>避難指示</td>
+                <td>災害のおそれ高い</td>
+                <td>危険な場所にいる場合は、必ず安全な場所へ全員避難を開始</td>
+            </tr>
+            <tr class="level-3">
+                <td>3</td>
+                <td>高齢者等避難</td>
+                <td>災害のおそれあり</td>
+                <td>避難に時間のかかる高齢者や障害のある人などは、安全な場所へ避難を開始</td>
+            </tr>
+            <tr class="level-2">
+                <td>2</td>
+                <td>大雨・洪水注意報</td>
+                <td>気象状況悪化</td>
+                <td>自ら避難行動を確認</td>
+            </tr>
+            <tr class="level-1">
+                <td>1</td>
+                <td>早期注意情報</td>
+                <td>今後の状況悪化のおそれ</td>
+                <td>災害への心構えを高める</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>※各種の情報は、警戒レベル1～5の順番で発表されるとは限りません。</p>
+    
+     <footer>
+        <p>&copy; 2024 避難行動ガイド</p>
+    </footer>
+    <script src="emergency.js"></script>
+</body>
+</html>

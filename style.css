@@ -138,6 +138,69 @@ header {
   transform: scaleX(1);
 }
 
+/* ===== ヒーローセクション ===== */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* ===== カードセクション ===== */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(50% - 40px); /* 2列表示 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h3 a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.card h3 a:hover {
+  text-decoration: underline;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
 h1 {
   font-size: 70px;
   font-family: lobster;

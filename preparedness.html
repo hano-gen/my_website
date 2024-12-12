@@ -7,6 +7,7 @@
   <script type="text/javascript" src="preparedness.js"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Satisfy&family=Stoke&family=Yellowtail&family=Geo&family=Oswald&family=Lobster&family=Cookie&family=Chewy&family=Limelight&family=Sacramento&family=Plaster&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width" />
 </head>
 
 <body>
@@ -25,23 +26,22 @@
       <li class="header-li"><a class="link" href="emergency.html">災害時の行動指針</a></li>
       <li class="header-li"><a class="link" href="contacts.html">連絡先・避難所情報</a></li>
     </ul>
-</nav>
+  </nav>
 </header>
 
-
- <!-- 携帯用 -->
- <section>
+<main>
+<!-- 携帯用 -->
+<section>
   <details>
   <summary>携帯用</summary>
   <ul>
       <li><input type="checkbox" id="water-carried"> <label for="water-carried">飲料水 (500ml)</label></li>
       <li><input type="checkbox" id="food-carried"> <label for="food-carried">携帯食 </label></li>
-      <p>チョコレート、キャンディー、栄養補給・調整食品など</p>
       <li><input type="checkbox" id="medical kit-carried"> <label for="medical kit-carried">医療キット (消毒薬、脱脂綿、包帯など)</label></li>
       <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">常備薬、持病薬 </label></li>
-      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">マスク </label></li>
-      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">簡易トイレ </label></li>
-      <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">ティッシュペーパー、トイレットペーパー </label></li>
+      <li><input type="checkbox" id="mask-carried"> <label for="mask-carried">マスク </label></li>
+      <li><input type="checkbox" id="toilet-carried"> <label for="toilet-carried">簡易トイレ </label></li>
+      <li><input type="checkbox" id="tissue-carried"> <label for="tissue paper-carried">ティッシュペーパー、トイレットペーパー </label></li>
       <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">ハンカチ </label></li>
       <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">安全ピン </label></li>
       <li><input type="checkbox" id="household medicine-carried"> <label for="household medicine-carried">ポリ袋 </label></li>
@@ -52,7 +52,6 @@
       <li><input type="checkbox" id="preparedness list-carried"> <label for="preparedness list-carried">備えリスト </label></li>
       <li><input type="checkbox" id="id-carried"> <label for="id-carried">身分証明書 (健康保険証、運転免許証、パスポートなど)</label></li>
       <li><input type="checkbox" id="cash-carried"> <label for="cash-carried">現金 (10円硬貨含む)</label></li>
-      <p>公衆電話用に10円、100円玉が必要<br>携帯・自宅電話がつながらない時</p>
       <li><input type="checkbox" id="light-carried"> <label for="light-carried">懐中電灯 (小型ライト)</label></li>
       <li><input type="checkbox" id="memo-carried"> <label for="memo-carried">連絡メモ・備えリスト</label></li>
       <li><input type="checkbox" id="pen-carried"> <label for="pen-carried">筆記用具 (メモ帳、ペン)</label></li>
@@ -61,6 +60,7 @@
   </ul>
   </details>
 </section>
+
 <!-- 非常持出し用 -->
 <section>
   <details>
@@ -69,7 +69,6 @@
       <li><input type="checkbox" id="water-kit"> <label for="water-kit">飲料水 (1.5L/人×3日分)</label></li>
       <li><input type="checkbox" id="food-kit"> <label for="food-kit">非常食 (缶詰、アルファ化米、インスタント食品など)</label></li>
       <li><input type="checkbox" id="helmet-kit"> <label for="helmet-kit">ヘルメット・防災ずきん・帽子など</label></li>
-      <p>頭を保護して逃げるもの</p>
       <li><input type="checkbox" id="flashlight-kit"> <label for="flashlight-kit">懐中電灯 (予備電池付き)</label></li>
       <li><input type="checkbox" id="medical-kit"> <label for="medical-kit">医療キット (消毒薬、脱脂綿、包帯など)</label></li>
       <li><input type="checkbox" id="toilet-kit"> <label for="toilet-kit">簡易トイレ</label></li>
@@ -80,9 +79,23 @@
       <li><input type="checkbox" id="pen-kit"> <label for="pen-kit">筆記用具 (油性マジックも)</label></li>
       <li><input type="checkbox" id="id-copy-kit"> <label for="id-copy-kit">身分証明書のコピー</label></li>
       <li><input type="checkbox" id="radio-kit"> <label for="radio-kit">携帯ラジオ (予備電池付き)</label></li>
+      <li><input type="checkbox" id="rain gear-kit"> <label for="rain gear-kit">雨具</label></li>
+      <li><input type="checkbox" id="furoshiki-kit"> <label for="furoshiki-kit">ふろしき</label></li>
+      <li><input type="checkbox" id="emergency bag-kit"> <label for="emergency bag-kit">非常持ち出し袋</label></li>
+      <li><input type="checkbox" id="portable food-kit"> <label for="portable food-kit">携帯食</label></li>
+      <li><input type="checkbox" id="sports shoes-kit"> <label for="sports shoes-kit">運動靴</label></li>
+      <li><input type="checkbox" id="utility knife-kit"> <label for="utility knife-kit">万能ナイフ</label></li>
+      <li><input type="checkbox" id="rope-kit"> <label for="rope-kit">ロープ(10m)</label></li>
+      <li><input type="checkbox" id="tweezers-kit"> <label for="tweezers-kit">毛抜き</label></li>
+      <li><input type="checkbox" id="household medicine-kit"> <label for="household medicine-kit">常備薬、持病薬 </label></li>
+      <li><input type="checkbox" id="memo-kit"> <label for="memo-kit">連絡メモ・備えリスト</label></li>
+      <li><input type="checkbox" id="tissue paper-kit"> <label for="tissue paper-kit">ティッシュペーパー、トイレットペーパー</label></li>
+      <li><input type="checkbox" id="wet wipes-kit"> <label for="wet wipes-kit">ウェットティッシュ</label></li>
+      <li><input type="checkbox" id="disposable body warmer-kit"> <label for="disposable body warmer-kit">使い捨てカイロ</label></li>
   </ul>
   </details>
 </section>
+
 <!-- 備蓄用 -->
 <section>
   <details>
@@ -111,10 +124,9 @@
   <!-- リンク -->
   <a class="link" href="index.html">TOPページに戻る</a>
 
-</section>
+</main>
 
 
-<!-- フッタ ー-->
 <!-- フッタ ー-->
 <footer>  
   <nav>
