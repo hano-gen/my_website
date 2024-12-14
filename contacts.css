@@ -23,9 +23,10 @@
     background: none;
     border: none;
     cursor: pointer;
-    position: absolute; /* メニュー内で位置を調整可能 */
-    top: 20px; /* メニュー内の位置 */
-    right: 20px;
+    position: fixed; /* メニュー内で常に見えるように固定 */
+    top: 15px; /* スマホ表示時の位置調整 */
+    right: 15px;
+    z-index: 1001; /* メニューより前面 */
   }
   
   .hamburger span {
@@ -54,7 +55,7 @@
     display: flex; /* パソコンでは常時表示 */
     gap: 20px;
     justify-content: center;
-    }
+  }
   
   .nav-menu ul {
     display: flex;
@@ -100,10 +101,10 @@
     }
   
     .nav-menu ul {
-      flex-direction: column; 
+      flex-direction: column; /* リンクを縦並びに */
     }
-  
   }
+  
   
   
   .link {
