@@ -139,6 +139,10 @@
     transform: scaleX(1);
   }
   
+  body {
+    font-family: 'Noto Sans', sans-serif;
+  }
+
   h1 {
     font-size: 70px;
     font-family: lobster;
@@ -147,10 +151,13 @@
   }
   
   section {
+    width: 60%;             /* コンテナの幅を適切に設定 */
+    text-align: left;       /* テキストを左揃え */
+    margin: 0 auto;         /* セクション全体を中央配置 */
     background-color: ivory;
-    padding: 30px;
-    margin-left: 30px;
-    text-align: left;
+    padding: 20px;          /* 内側の余白を追加 */
+    border-radius: 10px;    /* 角を丸くする（オプション） */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影（オプション） */
   }
   
   h2 {
@@ -189,7 +196,17 @@
     margin: 20px 0; /* 上下のみ余白 */
     border-radius: 8px;
     text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
   }
+
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
   
   ul {
     list-style-type: none;
