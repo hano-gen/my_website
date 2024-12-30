@@ -141,6 +141,12 @@
   
   body {
     font-family: 'Noto Sans', sans-serif;
+    justify-content: center;
+    background-color: ivory;
+  }
+
+  main {
+    background-color: white;
   }
 
   h1 {
@@ -153,24 +159,21 @@
   section {
     text-align: left;
     margin: 0 auto;
-    background-color: ivory;
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 30px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transform: translateY(20px);
     animation: fadeIn 1s forwards;
   }
   
   h2 {
-    color: brown;
-    font-size: 40px;
+    margin-bottom: 10px;
   }
-  
+
   div {
     display: flex;
+    justify-content: center;
   }
   
   img {
@@ -230,31 +233,26 @@
     font-size: 20px;
   }
   
-  input[type="checkbox"] {
-    border-radius: 0;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+  dt, dd {
+    float: none; /* floatを無効にする */
+    display: flex;
+    flex-direction: column; /* 上下に配置 */
+    margin-bottom: 10px;
   }
-  
-  input[type="checkbox"] {
-    position: relative;
-    width: 16px;
-    height: 16px;
-    border: 1px solid #000;
-    vertical-align: -5px;
+
+  dl {
+    display: block; /* dl全体をブロック要素として扱う */
+    margin-bottom: 20px;
   }
-  
-  input[type="checkbox"]:checked:before {
-    position: absolute;
-    top: 1px;
-    left: 4px;
-    transform: rotate(50deg);
-    width: 4px;
-    height: 8px;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
-    content: '';
+
+  dt {
+    font-weight: bold;
+    border-left: 3px solid #ccc;
+    padding-left: 7px;
+  }
+
+  dd {
+    margin-left: 10px;
   }
   
   .header-ul {
@@ -267,7 +265,9 @@
     float: left;
   }
   
-  
+  .center {
+    margin: auto auto auto auto;
+  }
   
   footer {
     display: flex;
