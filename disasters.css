@@ -142,7 +142,6 @@
   body {
     font-family: 'Noto Sans', sans-serif;
     justify-content: center;
-    background-color: ivory;
   }
 
   main {
@@ -241,8 +240,9 @@
   }
 
   dl {
-    display: block; /* dl全体をブロック要素として扱う */
+    display: block;
     margin-bottom: 20px;
+    margin-left: 10px;
   }
 
   dt {

@@ -139,10 +139,6 @@
   .link:hover::after {
     transform: scaleX(1);
   }
-
-  body{
-    background-color: ivory;
-  }
   
   main {
     padding: 1rem;
@@ -169,7 +165,6 @@
   }
 
   section {
-    background-color: ivory;
     padding: 30px;
     margin-left: 30px;
     text-align: left;
@@ -193,7 +188,7 @@
   }
 
   button {
-    background: #007BFF;
+    background: #6d9f49;
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -203,7 +198,7 @@
   }
 
   button:hover {
-    background: #0056b3;
+    background: #4e7532;
   }
 
   #decision-result {
@@ -230,13 +225,15 @@
 
 
   table {
-    width: 100%;
+    width: 97%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    margin: 0 auto;
+    overflow: auto;
   }
   
   table th, table td {
-    border: 1px solid #d2b48c;
+    border: 1px solid #a9cc8f;
     padding: 10px;
     text-align: left;
     font-size: 16px;
@@ -244,7 +241,7 @@
   }
   
   table th {
-    background-color: #8b5a2b;
+    background-color: #6d9f49;
     color: #fffaf0;
     font-weight: bold;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -254,19 +251,18 @@
     background-color: #f2f2f2;
   }
   
-  /* レスポンシブデザイン例 */
   @media (max-width: 768px) {
     .table-wrapper {
       margin: 0 auto;
       width: 90%;
       overflow-x: auto;
-      -webkit-overflow-scrolling: touch; /* スクロールの滑らかさを向上 */
+      -webkit-overflow-scrolling: touch;
     }
     
     table {
       width: 100%;
       border-collapse: collapse;
-      min-width: 600px; /* 表の最小幅を指定（必要に応じて調整） */
+      min-width: 600px;
     }
     
     th, td {
@@ -278,6 +274,10 @@
     .asterisk {
       padding: 20px;
     }
+  }
+
+  section.caution {
+    padding-left: 30px;
   }
 
   .header-ul {

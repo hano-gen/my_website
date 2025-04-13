@@ -171,6 +171,10 @@
     color: #404040;
   }
 
+  span.big {
+    font-size: 50px;
+  }
+
   a.weblink {
     color: #404040;
   }
