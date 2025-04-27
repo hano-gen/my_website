@@ -193,38 +193,47 @@
   }
 
   @media (max-width: 768px) {
-    main {
+    header {
+      padding: 30px; /* パディングを調整 */
       text-align: center;
     }
-    
+  
+    .nav-menu ul {
+      flex-direction: column; /* リンクを縦並びに */
+      gap: 10px;
+    }
+  
+    main {
+      padding: 15px; /* メインコンテンツのパディングを小さく */
+    }
+  
     details {
-      padding: 70px;
-      background-color: #f5f5f5;
+      padding: 50px; /* 詳細セクションのパディングを調整 */
+      background-color: #f9f9f9; /* 背景色を少し変更 */
     }
-    
+  
     details[open] summary {
-      margin-bottom: 15px; /* 開いた状態での見出しとリスト間の余白 */
+      margin-bottom: 10px; /* 開いた状態の余白調整 */
     }
-    
+  
     summary {
-      font-size: 40px;
+      font-size: 24px; /* サマリーの文字サイズを小さく */
     }
   
     div.box {
+      padding: 30px;
+      border-bottom: solid;
       border-bottom-color: #6d9f49;
       border-width: 4px;
+      margin: 0px;
       text-align: center;
     }
   
-    h3 {
-      color: #404040;
+    footer {
+      padding: 10px; /* フッターのパディングを小さく */
     }
-  
-    a.weblink {
-      color: #404040;
-    }
-  }  
-  
+  }
+
   footer {
     color: white;
     background-color: brown;
